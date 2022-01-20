@@ -23,6 +23,6 @@ WORKDIR /app
 
 COPY --from=build /app/target/yili-music-0.0.1.jar .
 
-EXPOSE 80
+EXPOSE 8080
 
 CMD ["java","-jar","/app/yili-music-0.0.1.jar"]
